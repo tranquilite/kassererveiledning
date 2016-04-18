@@ -1,0 +1,21 @@
+\usepackage{graphicx, enumerate, libertine, blindtext, enumitem}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper]{geometry}
+\usepackage[norsk]{babel}
+
+\setcounter{tocdepth}{1}
+
+\DeclareGraphicsExtensions{.png,.jpg,.gif}
+
+\newcommand{\postering}[2]{ {\bfseries #1 - #2 } }
+
+\renewcommand{\postering}[2]  {
+	\begin{description}[labelsep=0em, labelwidth=5em]
+		\setlength\itemsep{-0.2em}
+		\item [Kredit] #1
+		\item [Debit] #2
+	\end{description}
+}
