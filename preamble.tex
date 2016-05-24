@@ -10,8 +10,9 @@
 
 \DeclareGraphicsExtensions{.png,.jpg,.gif}
 
-\newcommand{\postering}[2]{ {\bfseries #1 - #2 } }
 
+% Hurtigformatering for mer oversiktlige eksempel på bilag.
+\newcommand{\postering}[2]{ {\bfseries #1 - #2 } }
 \renewcommand{\postering}[2]  {
 	\begin{description}[labelsep=0em, labelwidth=5em]
 		\setlength\itemsep{-0.2em}
@@ -19,3 +20,6 @@
 		\item [Debit] #2
 	\end{description}
 }
+
+% Makromisbruk for å forenkle ikke-bruk-meldinga i kontoplanen
+\newcommand{\nektes}{ {\bfseries Brukes ikke!}}
