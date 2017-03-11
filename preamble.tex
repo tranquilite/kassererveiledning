@@ -1,5 +1,5 @@
 \usepackage{graphicx, enumerate, libertine, blindtext, enumitem}
-\usepackage{pdfpages, longtable, float}
+\usepackage{pdfpages, longtable, float, xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -22,4 +22,5 @@
 }
 
 % Makromisbruk for å forenkle ikke-bruk-meldinga i kontoplanen
-\newcommand{\nektes}{ {\bfseries Brukes ikke!}}
+%\newcommand{\nektes}{ {\bfseries Brukes ikke! \color{red}}}
+\newcommand{\nektes}{ \color{gray} \emph{Brukes ikke!} }
